@@ -50,15 +50,6 @@ class GameMap(object):
             xcor += self.block_size
 
 
-class Player(object):
-    def __init__(self, x, y):
-        self.x = x
-        self.y = y
-
-    def draw(self):
-        pygame.draw.circle(window, (255, 255, 0), (self.x, self.y), 25, 25)
-
-
 game_map = GameMap(height, width)
 gmap = game_map.create()
 
