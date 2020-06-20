@@ -56,7 +56,6 @@ gmap = game_map.create()
 game = True
 while game:
     for event in pygame.event.get():
-        pressed = pygame.key.get_pressed()
         if event.type == pygame.QUIT:
             game = False
             pygame.quit()
